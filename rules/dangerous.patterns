@@ -1,0 +1,23 @@
+# One pattern per line. Lines starting with # are ignored.
+npm install
+bun install
+pip install
+curl.*\|.*sh
+curl.*\|.*bash
+wget.*\|.*sh
+wget.*\|.*bash
+eval.*curl
+eval.*wget
+atomic-lockfile
+js-digest
+base64 -d
+base64 --decode
+exec.*\/tmp\/
+chmod.*\+x.*\/tmp\/
+\/dev\/tcp\/
+nc -e
+ncat.*-e
+mkfifo.*\/tmp\/
+python.*-c.*import
+python3.*-c.*import
+preinstall

