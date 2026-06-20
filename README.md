@@ -1,6 +1,6 @@
 # aurguard
 
-A deterministic pre-install security hook for AUR packages on Arch/Manjaro.
+A deterministic pre-install security hook for AUR packages on Arch based distros.
 
 Built in response to the **June 2026 atomic-lockfile/js-digest AUR supply-chain attack** (~400+ packages compromised).
 
